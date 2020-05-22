@@ -1,0 +1,8 @@
+1. Hyperlinks:  Enable any string to be clicked and open a new document which is referenced by the content of the href tag,  named URL : Universal Resource Locator
+remember Sit Tom Barnes Lee
+
+<a href"/img/logo1.png" >
+  Destination
+</a>
+
+2. 
