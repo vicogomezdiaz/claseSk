@@ -1,0 +1,11 @@
+1. Class: is any user defined class which allows CSS to modify the appearence of contained elements inside a defined html element.
+
+.myclass {
+  color: black;
+  font-size: 1.0em;
+  font-weight: bold;
+  background-color:white;
+  text-align:center;
+  margin:0 auto;
+  padding: 10px;  
+}
