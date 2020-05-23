@@ -1,4 +1,23 @@
-1. Hyperlinks:  Enable any string to be clicked and open a new document which is referenced by the content of the href tag,  named URL : Universal Resource Locator
+HTML was created by Sir Tim Berners-Lee while working at CERN,  aimed to solve the problem of linking multiple documents to ease it's consumption.
+Please feel free to read more about it,  on Wikipedia.
+
+1. HTML Hypertext Markup Language creates documents composed of tags,  which can represent data and media,  like videos, audio and images.
+HTML is usually assisted by CSS and ES6 in order to create dinamyc and beautiful documents.  Each html document is represented and visualized through a Browser,  a kind of application that interprets HTML code and renders the desired document in what is common referred to web page.
+
+2. Tags.  Are the building blocks of any html document.  Tags are represented by <[tag name]></[tag name]>,  a pair of opening and closing tags.
+
+3. Hello World.
+```<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a title</title>
+  </head>
+  <body>
+    <p>Hello world!</p>
+  </body>
+</html>```
+
+3. Hyperlinks:  Enable any string to be clicked and open a new document which is referenced by the content of the href tag,  named URL : Universal Resource Locator
 remember Sit Tom Barnes Lee
 
 <a href"/img/logo1.png" >
