@@ -1,4 +1,4 @@
-HTML was created by Sir Tim Berners-Lee while working at CERN,  aimed to solve the problem of linking multiple documents to ease it's consumption.
+*HTML* was created by Sir Tim Berners-Lee while working at CERN,  aimed to solve the problem of linking multiple documents to ease it's consumption.
 Please feel free to read more about it,  on Wikipedia.
 
 1. HTML Hypertext Markup Language creates documents composed of tags,  which can represent data and media,  like videos, audio and images.
@@ -7,6 +7,7 @@ HTML is usually assisted by CSS and ES6 in order to create dinamyc and beautiful
 2. Tags.  Are the building blocks of any html document.  Tags are represented by <[tag name]></[tag name]>,  a pair of opening and closing tags.
 
 3. Hello World.
+
 ```
 <!DOCTYPE html>
 <html>
