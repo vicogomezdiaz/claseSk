@@ -7,7 +7,8 @@ HTML is usually assisted by CSS and ES6 in order to create dinamyc and beautiful
 2. Tags.  Are the building blocks of any html document.  Tags are represented by <[tag name]></[tag name]>,  a pair of opening and closing tags.
 
 3. Hello World.
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html>
   <head>
     <title>This is a title</title>
@@ -15,7 +16,8 @@ HTML is usually assisted by CSS and ES6 in order to create dinamyc and beautiful
   <body>
     <p>Hello world!</p>
   </body>
-</html>```
+</html>
+```
 
 3. Hyperlinks:  Enable any string to be clicked and open a new document which is referenced by the content of the href tag,  named URL : Universal Resource Locator
 remember Sit Tom Barnes Lee
