@@ -241,15 +241,21 @@ a {
 .clickable {
 	cursor:pointer;
 }
-/* //== IMAGENS  ==// */
+
+
+
+/*  === IMAGENES ===*/
 .top-titulo {
 	color:white;
 	font-size:1.5em;
 }
-
+.imagen-fondo {                                                                                                                                                                                                                            
+	background-image: linear-gradient(to bottom, rgba(255,255,0,0.7), rgba(0,0,255,0.7)), url('../img/fondo1.jpeg');                                                                                                                      
+}  
 .logo-top {
 	height:45px;
 }
+
 
 /* === / FUENTES / === */
 @font-face {
@@ -286,10 +292,6 @@ a {
 	width:48px;
 }
 
-/*  === IMAGENES ===*/
-.imagen-fondo {                                                                                                                                                                                                                            
-	background-image: linear-gradient(to bottom, rgba(255,255,0,0.7), rgba(0,0,255,0.7)), url('../img/fondo1.jpeg');                                                                                                                      
-}  
 
 /* === inputs === */
 
