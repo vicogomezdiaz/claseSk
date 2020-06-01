@@ -1,0 +1,126 @@
+html, body {
+	font-family: Arial;
+	color: #808080;
+	font-size: 1.0em;
+	margin: 0 auto;
+	min-height:100vh;
+	width:100%;
+	min-height: -webkit-fill-available;
+}
+
+img {
+	max-width:100%;
+	heigh:auto;
+}
+
+/* [GRILLA] */
+.contenedor {
+	display: grid;
+	place-items:stretch center;
+	min-height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows: 55px auto 25px;
+	grid-template-areas:
+	"head"
+	"cont"
+	"foot"
+}
+.header-c {
+	display:grid;
+	grid-area: head;
+	background-color: gray;
+	place-items:center center;
+	position:sticky;
+	width:100%;
+	top:0;
+	grid-template-columns:150px auto;
+	grid-template-areas:
+	"hlogo hmenu"
+}
+.header-logo {
+	grid-area:hlogo;
+}
+.header-menu {
+	display:grid;
+	color:white;
+	grid-area: hmenu;
+	font-size:0.75em;
+	width:100%;
+	place-items:center center;
+	grid-template-columns:repeat(4 1fr);
+	grid-template-areas:
+	"hm1 hm2 hm3 hm4"
+}
+.h-m1 {
+	grid-area:hm1;
+}
+.h-m2 {
+	grid-area:hm2;
+}
+.h-m3 {
+	grid-area:hm3;
+}
+.h-m4 {
+	grid-area:hm4;
+}
+.header-mham {
+	grid-area:hmenuham;
+	display:none;
+}
+.cnt {
+	display:grid;
+	grid-area:cont;
+}
+.fot {
+	display:grid;
+	grid-area:foot;
+	position:sticky;
+	bottom:0;
+	width:100%;
+	font-size:0.65em;
+	color:white;
+	background-color:gray;
+	place-items:center center;
+	grid-template-columns: 150px repeat(3 1fr);
+	grid-template-areas:
+	"version f1 f2 f3"
+}
+.f-version {
+	grid-area:version;
+}
+.footer-1 {
+	grid-area:f1;
+}
+.footer-2 {
+	grid-area:f2;
+}
+.footer-3 {
+	grid-area:f3;
+}
+
+/* [IMAGENES] */
+.logo-top {
+	width:60px;
+}
+
+/* [TITULOS] */
+h1 {
+
+}
+
+
+/* [MEDIA QUERIES ] */
+@media (min-width:150px) and (max-width: 900px) {
+
+	.header-c {
+		grid-template-columns: 1.5fr 0.1fr;
+		grid-template-areas:
+		"hlogo hmenuham"
+	}
+	.header-menu {
+		display:none;
+	}
+	.header-mham {
+		display:block;
+	}
+}
