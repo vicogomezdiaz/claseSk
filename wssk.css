@@ -68,9 +68,83 @@ img {
 	display:none;
 }
 .cnt {
-	display:grid;
+	display: grid;
 	grid-area:cont;
+	place-items:stretch center;
+	min-height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows: repeat(3 1fr);
+	grid-template-areas:
+	"c-tit"
+	"c-cont"
+	"c-fondo"
 }
+.cnt-titulo {
+	grid-area:c-tit;
+}
+.cnt-contenido {
+	display: grid;
+	grid-area:c-cont;
+	place-items:stretch center;
+	grid-template-columns:repeat(3 1fr);
+	grid-template-rows: repeat(5 1fr);
+	grid-template-areas:
+	"c-11 c-21 c-31"
+	"c-12 c-22 c-32"
+	"c-13 c-23 c-33"
+	"c-14 c-24 c-34"
+	"c-15 c-25 c-35"
+}
+.cnt-c11 {
+	grid-area: c-11;
+}
+.cnt-c12 {
+	grid-area:c-12;
+}
+.cnt-c13 {
+	grid-area:c-13;
+}
+.cnt-c14 {
+	grid-area:c-14;
+}
+.cnt-c15 {
+	grid-area:c-15;
+}
+.cnt-c21 {
+	grid-area:c-21;
+}
+.cnt-c22 {
+	grid-area:c-22;
+}
+.cnt-c23 {
+	grid-area:c-23;
+}
+.cnt-c24 {
+	grid-area:c-24;
+}
+.cnt-c25 {
+	grid-area:c-25;
+}
+.cnt-c31 {
+	grid-area:c-31;
+}
+.cnt-c32 {
+	grid-area:c-32;
+}
+.cnt-c33 {
+	grid-area:c-33;
+}
+.cnt-c34 {
+	grid-area:c-34;
+}
+.cnt-c35 {
+	grid-area:c-35;
+}
+.cnt-fondo {
+	grid-area:c-fondo;
+
+}
+
 .fot {
 	display:grid;
 	grid-area:foot;
@@ -111,7 +185,6 @@ h1 {
 
 /* [MEDIA QUERIES ] */
 @media (min-width:150px) and (max-width: 900px) {
-
 	.header-c {
 		grid-template-columns: 1.5fr 0.1fr;
 		grid-template-areas:
@@ -122,5 +195,19 @@ h1 {
 	}
 	.header-mham {
 		display:block;
+	}
+	.fot {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"f2"
+	}
+	.f-version {
+		color:red;
+	}
+	.footer-1 {
+		color:red;
+	}
+	.footer-3 {
+		color:red;
 	}
 }
