@@ -206,6 +206,26 @@ img {
 	}
 
 
+.cnt-contenido {
+	grid-template-columns:1fr;
+	grid-template-rows: repeat(15, 1fr);
+	grid-template-areas:
+	"c11"
+	"c21"
+	"c31"
+	"c12"
+	"c22"
+	"c32"
+	"c13"
+	"c23" 
+	"c33"
+	"c14"
+	"c24"
+	"c34"
+	"c15" 
+	"c25"
+	"c35";
+}
 
 
 }
