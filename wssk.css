@@ -7,7 +7,13 @@ html, body {
 	min-height: -webkit-fill-available;
 	width:100%;
 }
-
+a {
+	text-decoration:none;
+	color: white;
+}
+a:hover {
+	color: red;
+}
 img {
 	max-width:100%;
 	heigh:auto;
@@ -204,7 +210,6 @@ img {
 	.footer-3 {
 		display:none;
 	}
-
 
 .cnt-contenido {
 	grid-template-columns:1fr;
