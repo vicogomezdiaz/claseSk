@@ -1,7 +1,7 @@
 html, body {
 	font-family: Arial;
 	color: #808080;
-	font-size: 1.0em;
+	font-size: 0.90em;
 	margin: 0 auto;
 	min-height:100vh;
 	min-height: -webkit-fill-available;
@@ -91,14 +91,42 @@ img {
 	display: grid;
 	grid-area:ccont;
 	place-items:stretch center;
-	grid-template-columns:repeat(3, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns:1fr;
+	grid-template-rows: repeat(3, minmax(min-height,max-height));
+	grid-template-areas:
+	"c11"
+	"c12"
+	"c13"
+}
+.cnt-3x5 {
+	display: grid;
+	grid-area:grilla-3x5;
+	place-items:stretch center;
+	grid-template-columns:repeat(3, minmax(min-width,max-width));
+	grid-template-rows: repeat(5, minmax(min-height,max-height));
 	grid-template-areas:
 	"c11 c21 c31"
 	"c12 c22 c32"
 	"c13 c23 c33"
 	"c14 c24 c34"
 	"c15 c25 c35";
+}
+
+.cnt-1x8 {
+	display: grid;
+	grid-area:grilla-1x8;
+	place-items:stretch center;
+	grid-template-columns:1fr;
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-areas:
+	"c11"
+	"c12"
+	"c13"
+	"c14"
+	"c15"
+	"c16"
+	"c17"
+	"c18";
 }
 .cnt-c11 {
 	grid-area: c11;
@@ -179,6 +207,62 @@ img {
 .logo-top {
 	width:60px;
 }
+.avatar-list {
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+}
+
+/* // MENU HAMBURGUESA */
+.menu-ham {
+	width:0;
+	position:fixed;
+	z-index:6;
+	max-height:100%;
+	right:0;
+	top:45px;
+	margin:auto;
+	background-color: steelblue;
+	color:white;
+	transition:0.5s;
+	border-radius:6% 0% 0% 6%;
+}
+.mh-item  {
+	padding:8px 16px 8px 28px;
+}
+.mh-item:hover {
+	background-color: gainsboro;
+	color:gray;
+}
+
+
+/* [ TABLAS ]*/
+table {
+	table-layout:fixed;
+	width:100%;
+	border-collapse:collapse;
+	border:2px solid gray;
+}
+th td {
+	padding:20px;
+}
+th {
+	letter-spacing: 2px;
+}
+
+td {
+	letter-spacing: 1px;
+}
+
+tbody td {
+	text-align: center;
+}
+
+.celda {
+	border:1px solid gray;
+	padding: 6px;
+}
+
 
 /* [TITULOS] */
 
@@ -211,26 +295,26 @@ img {
 		display:none;
 	}
 
-.cnt-contenido {
-	grid-template-columns:1fr;
-	grid-template-rows: repeat(15, 1fr);
-	grid-template-areas:
-	"c11"
-	"c21"
-	"c31"
-	"c12"
-	"c22"
-	"c32"
-	"c13"
-	"c23" 
-	"c33"
-	"c14"
-	"c24"
-	"c34"
-	"c15" 
-	"c25"
-	"c35";
-}
+	.cnt-3x5 {
+		grid-template-columns:1fr;
+		grid-template-rows: repeat(15, 1fr);
+		grid-template-areas:
+		"c11"
+		"c21"
+		"c31"
+		"c12"
+		"c22"
+		"c32"
+		"c13"
+		"c23" 
+		"c33"
+		"c14"
+		"c24"
+		"c34"
+		"c15" 
+		"c25"
+		"c35";
+	}
 
 
 }
