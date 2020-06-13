@@ -25,7 +25,7 @@
 				<div class="hm-4"> <a href="#"> Valve </a> </div>
 			</div>
 			<div class="header-mham">
-				<img src="/shell/img/ico/menu.svg" alt="" class="menuham" />
+				<img src="/shell/img/ico/menu.svg" alt="" class="menuham" id="btnMh" />
 			</div>
 		</header>
 
@@ -35,12 +35,13 @@
 			</div>
 			<div class="cnt-contenido">
 				<div class="cnt-11">
-					<label> Configuracion
-						<img src="/shell/img/ico/settings.svg" alt="" id="btnSet" />	
-					</label>
-					<table id="dataEstadoApp"></table>
-				</div>
-				<div class="cnt-12">
+					<table>
+						<thead>
+							<tr>
+							</tr>
+						</thead>
+						<tbody id="dataEstadoApp"></tbody>
+					</table>
 				</div>
 			</div>
 			<div class="cnt-fondo">Hola Mundo test div!</div>
@@ -53,6 +54,13 @@
 			<div class="footer-2">Disclaimer</div>
 			<div class="footer-3">Inicio</div>
 		</footer>
+		
+		<!-- MENU HAMBURGUESA -->
+		<div id="divMenuham" class="menu-ham">
+			<div class="mh-item menuAccion" id="menSb0" data-url="/">Inicio</div>
+			<div class="mh-item menuAccion" id="menSb2" data-url="/contacto-digitai.html">Contacto</div>
+			<div class="mh-item menuAccion" id="menSb3" data-url="/equipo-digitai.html">Nosotros</div>
+		</div>
 
 		<script src="/src/js/index.js"></script>
 	</body>
