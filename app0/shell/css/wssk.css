@@ -16,9 +16,13 @@ a:hover {
 }
 img {
 	max-width:100%;
-	heigh:auto;
+	height:auto;
 }
-
+video {
+	/*filter: hue-rotate(100deg) saturate(200%);*/
+	max-width: 100%;
+	width:320px;
+}
 /* [GRILLA] */
 .contenedor {
 	display: grid;
