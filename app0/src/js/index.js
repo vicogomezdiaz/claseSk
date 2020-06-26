@@ -16,7 +16,6 @@ window.addEventListener('click', (ev) => {
 		alert('marcarle a '+ ev.target.dataset.user);
 	}
 
-
 	if(ev.target.matches('.url')) { // menu Inicio
 		window.open(ev.target.dataset.url, '_blank' );
 	}
