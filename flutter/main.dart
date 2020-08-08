@@ -10,6 +10,19 @@ class MyApp extends StatelessWidget {
 		return MaterialApp(
 			home: Scaffold(
 				backgroundColor: Colors.red ,
+				appBar: AppBar(
+					backgroundColor: Colors.blue,
+					title:Image.asset('images/jea.jpg'),
+					actions: <Widget>[
+						IconButton(
+								icon: const Icon(Icons.adb),
+								tooltip:'Hola Mundo',
+								onPressed: () {
+									
+								},
+						),
+					],
+				),
 				body: SafeArea(
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,6 +38,26 @@ class MyApp extends StatelessWidget {
 									color: Colors.white,
 									fontFamily: 'Pacifico',
 								),
+							),
+							Container(
+								width: 400.0,
+								height:50.0,
+								color: Colors.white,
+								child: Container(
+									child: Text('API Developer Digitai'),
+									),	
+							),
+							Container(
+								width: 400.0,
+								height:50.0,
+								color: Colors.purple,
+								child:  Text('573153418393'),
+							),
+							Container(
+								width: 400.0,
+								height:50.0,
+								color: Colors.teal,
+											child: Image(image: AssetImage('images/avatar.jpeg')),
 							),
 						],	
 					),
