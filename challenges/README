@@ -8,5 +8,5 @@ Dificultad: Media
 Vamos a crear una app en flutter en la que cada vez que el usuario hace click en un boton,  la app le responde con una frase que representa la sabiduria del Oraculo sobre un tema.
 Pasos.
 1. Escojan un tema sobre el que van a dar respuestas,  por ejemplo,  "Liga de Football amerciano en USA", "Periodo Cretaceo", "Kawai en Japon"... etc,  cualquier tema que les interese, o agrade o tengan curiosidad.
-2. Creen la app,  guiandose por la UI que adjunto como ui_challenge1.png.
+2. Creen la app,  guiandose por la UI que adjunto como g.
 3. Al pulsar el boton,  debe aparecer una frase,  diferente sobre el tema.
