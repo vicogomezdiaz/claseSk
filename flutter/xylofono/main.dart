@@ -1,83 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audio_cache.dart';
 
-void main() {
-  runApp(XyloApp());
-}
+void main() => runApp(XyloApp());
 
 class XyloApp extends StatelessWidget {
+
+  void playSound(nota) {
+    final player = AudioCache();
+    player.play('xylo$nota.mp3');
+  }
+
+  Expanded drawTile({Color color, String nota}) {
+    return Expanded(
+      child: FlatButton(
+          color: color,
+          onPressed: () {
+            playSound(nota);
+          }), // FlatButton
+    ); // Expanded
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
           child: Column(
-			crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Expanded(
-                child: FlatButton(
-                    color: Colors.orange,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo1.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.red,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo2.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.purple,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo3.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.pink,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo4.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.blue,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo5.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.green,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo6.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.lime,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo7.mp3');
-                    }), // FlatButton
-              ), // Expanded
-              Expanded(
-                child: FlatButton(
-                    color: Colors.amber,
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play('xylo8.mp3');
-                    }), // FlatButton
-              ), // Expanded
+              drawTile(color: Colors.yellow, nota: "Do"),
+              drawTile(color: Colors.orange, nota: "Re"),
+              drawTile(color: Colors.red, nota: "Mi"),
+              drawTile(color: Colors.lightBlue, nota: "Fa"),
+              drawTile(color: Colors.blue, nota: "Sol"),
+              drawTile(color: Colors.lightGreen, nota: "La"),
+              drawTile(color: Colors.green, nota: "Si"),
+              drawTile(color: Colors.amber, nota: "Do"),
             ], // Widget[]
           ), // Column
         ), // body
